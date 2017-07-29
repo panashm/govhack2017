@@ -1,23 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container-fluid">
-        <div class="row new entry">
-            <div class="col-xs-11">
-                <form action="{{ url_for('main') }}" method="GET">
-                    <button type="submit" class="btn btn-default">ABOUT</button>
-                </form>
-            </div>
-        </div>
+<div class="container-fluid">
+    <br/>
+    <br/>
+    <h3 class="subHeading1">About</h3>
+    <div class="aboutText">
         <br/>
-        <hr/>
-        <br/>
-        <div class="row entries">
-            <div class="col-xs-12">
-                <div class="table-responsive">
-                    
-                </div>
-            </div>
-        </div>
+        <p>
+            Aggregating and analysing NSW education and school enrolment data to discover trends in performance of students in specific subjects in relation with factors attributed with school, location and gender.
+
+            In particular, we are interested in student performances in Science, Technology, Engineering & Mathematics (STEM) related subjects over time of of females and students located in regional areas who have otherwise historically been under-represented parties. By identifying these performance indicators, we hope that they'll serve as tools in the aid of combatting this key issue as we move closer and closer to a more quantitative and digital age.
+        </p>
+    
     </div>
+    <div class="row entries">
+        <div class="col-xs-12">
+            <div class="table-responsive">
+
+            </div>
+        </div>
+</div>
+</div>
 
 {% endblock %}

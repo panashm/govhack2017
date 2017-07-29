@@ -2,13 +2,30 @@
     margin: 0;
 }
 
+.subHeading1 {
+    color: #546E7A;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.subHeading1:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 5%;
+    border-bottom: 3px solid #546E7A;
+}
+
 .tableH>thead>tr>th, .tableH>tbody>tr>th, .tableH>tfoot>tr>th, .tableH>thead>tr>td, .tableH>tbody>tr>td, .tableH>tfoot>tr>td{
     padding-bottom: 3px;
     padding-left: 1px;
     padding-right: 1px;
 }
 
-.desktopView, .footer {
+.desktopView {
     height: 100%;
     max-width: 700px;
 
@@ -17,14 +34,14 @@
 }
 
 .wrapper {
-    min-height: 70vh;
+    min-height: 73vh;
     height: auto ;
     margin-top: 50px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer {
-    height: 20px; /* .push must be the same height as .footer */
-    
-    max-width: 700px;
+    color: white;
+    height: auto; /* .push must be the same height as .footer */
+    background-color: rgba(0, 134, 179, 0.7);
     padding: 15px;
 
 }
@@ -53,6 +70,10 @@ body {
     width: 100%
 }
 
+.beforePadding {
+    height: 30px;
+    
+}
 .affix ~ .container-fluid {
     position: relative;
     top: 50px;
@@ -68,9 +89,10 @@ body {
 }
 
 .labelUsername {
-    margin-top:5px;
-    margin-bottom:5px;
+    margin-top:2px;
+    margin-bottom:2px;
     display: inline;
+    font-size: 18px;
     vertical-align:bottom;
     text-align: left;
 }
@@ -130,7 +152,7 @@ hr {
 
 .bottomText {
     font-size: 13px;
-    color: #cccccc; /* old IE */
+    color: white; /* old IE */
     
 }
 
