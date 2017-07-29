@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+}
+
+.tableH>thead>tr>th, .tableH>tbody>tr>th, .tableH>tfoot>tr>th, .tableH>thead>tr>td, .tableH>tbody>tr>td, .tableH>tfoot>tr>td{
+    padding-bottom: 3px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.desktopView, .footer {
+    height: 100%;
+    max-width: 700px;
+
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+.wrapper {
+    min-height: 70vh;
+    height: auto ;
+    margin-top: 50px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer {
+    height: 20px; /* .push must be the same height as .footer */
+    
+    max-width: 700px;
+    padding: 15px;
+
+}
+
+body {
+     /*background: */
+    font-family: 'Roboto', sans-serif;
+    padding: 30;
+}
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.navbar {
+    /*margin-bottom: 0px;*/
+    background-color: #EEEEEE;
+    /*position: fixed; /* Set the navbar to fixed position */
+    /*top: 0; /* Position the navbar at the top of the page */
+    /*width: 100%; /* Full width */
+}
+
+.tableH {
+    width: 100%
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+.daysLabel {
+    padding-top:5px;
+    padding-right:5px;
+    padding-left:5px;
+    padding-bottom:5px;
+
+    display:inline-block;
+}
+
+.labelUsername {
+    margin-top:5px;
+    margin-bottom:5px;
+    display: inline;
+    vertical-align:bottom;
+    text-align: left;
+}
+
+.text-muted {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30
+}
+
+h1, h2, h3, p, h4, blockquote, q, .maia-nav ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+table {
+    border: none;
+    background-color:#EEEEEE;
+}
+
+b {
+    font-weight:500;
+}
+
+.table-borderless tbody tr td,
+.table-borderless tbody tr th,
+.table-borderless thead tr th,
+.table-borderless thead tr td,
+.table-borderless tfoot tr th,
+.table-borderless tfoot tr td {
+    border: none;
+    
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #4db8ff; /* old IE */
+    background-color: #4db8ff; /* Modern Browsers */
+}
+
+.daysSelect {
+     width:70px;
+}
+
+.bottomText {
+    font-size: 13px;
+    color: #cccccc; /* old IE */
+    
+}
+
+.glyphicon {
+    font-size: 18px;
+}
+
+.label-primary {
+    background-color: #dbdde0;
+}
+
+.tableBin {
+    text-align: left;  
+    vertical-align: middle !important;
+}
+
+.tableTime {
+    text-align: center;  
+    vertical-align: middle !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
+    font-size: 18px;
+}
+
+.tableIndex {
+    text-align: center;  
+    vertical-align: middle !important;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label-primary{
+    background-color: #B0BEC5;
+}
+
+.formBack {
+	background-color: #0099cc;
+	padding: 7px;
+	color: white;
+}
+
+.header {
+    background-color: aqua;
+}
+
+
+.titleBack {
+	background-color: #FFFFFF;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 4px;
+	font-weight: 300;
+}
+
+.menuFloat {
+}
+.selectModeTitle {
+	background-color: rgb(0, 153, 204);
+	font-size: 25px;
+	text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-weight: 200;
+	color: white;
+}
+
+
+#footerText {
+	color: white;
+	text-align: center;
+}
+
+hr {
+	margin: 0px;
+	padding: 0px;
+}
+
+.routePadding {
+	padding-top: 4px;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+

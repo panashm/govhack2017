@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.bsdesign
+*.DS_Store
+app.db
+*.db
+*.pyc
+env/
+db_repository/
