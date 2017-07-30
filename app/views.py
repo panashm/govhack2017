@@ -14,7 +14,7 @@ import numpy as np
 
 subjects=[15210, 15240, 15360, 15120, 15050]
 
-filenames = ["data/2014.csv", "data/2015.csv", "data/2016.csv"] # Fill in remaining files.
+filenames = ["data/2014.csv", "data/2014.csv", "data/2015.csv", "data/2016.csv"] # Fill in remaining files.
 df1 = pd.DataFrame()
 for filename in filenames:
     df1 = df1.append(pd.read_csv(filename))
@@ -22,12 +22,12 @@ for filename in filenames:
 subjectDict = {}
 
 num = 0
-for n in range(5):
+for n in range(len(subjects)):
     print("hello world")
     subjectDict[subjects[num]] = []
     print(subjects[num])
     year = 2014
-    for n in range(3):
+    for n in range(len(filenames)):
         df1_filtered = df1[(df1['subject'] == subjects[num]) & (df1['year'] == year)]
         #print(df1_filtered)
         totalF = df1_filtered['t_female'].sum()

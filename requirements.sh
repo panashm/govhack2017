@@ -12,5 +12,5 @@ env/bin/pip install flask-admin
 env/bin/pip install flask-bcrypt
 env/bin/pip install pandas
 
-
+env/bin/pip install python-2.7.13
 
