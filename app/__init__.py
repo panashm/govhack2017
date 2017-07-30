@@ -24,7 +24,6 @@ lm  = LoginManager()
 
 lm.init_app(app)
 lm.login_view = 'login'
-db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 admin = Admin(app)
 BaseView = BaseView

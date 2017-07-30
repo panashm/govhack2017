@@ -7,9 +7,8 @@ from datetime import date, datetime, time, timedelta
 import time
 from flask_login import login_user, logout_user, current_user, login_required
 from datetime import datetime
-from app import app, db, lm, admin, BaseView, expose, ModelView, bcrypt
+from app import app, lm, admin, BaseView, expose, ModelView, bcrypt
 #from .forms import searchForm, newEntryForm, item_choices, day_choices, search_choices, loginForm
-from .models import User
 import pandas as pd
 import numpy as np
 
