@@ -1,8 +1,9 @@
 
 {% extends "base.html" %}
 {% block content %}
-    <div class="container-fluid">
+    <div class="">
         <div class="beforePadding"></div>
+        <div class="desktopView1">
         <h3 class="subHeading1">Interactive Graphs (THINK OF TITLE)</h3>
         <br/>
         <br/>
@@ -10,21 +11,33 @@
             Brief Description of dataset
             
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.
-        </p>
-         <div class="stemTable" id="app">
-             <h3>Stem Subjects Stats</h3>
-             <br/>
+            </p>
+            <br/>
+            <div class="beforePadding"></div>
     
-             <canvas id="myChart" width="400" height="200"></canvas>
-             <br/>
-             <br/>
+        </div>
+         <div class="stemTable" >
+                     <div class="beforePadding"></div>
+
+             <div class="desktopView1" id="app">
+                 <h3>Stem Subjects Stats</h3>
+                 <br/>
+
+                 <canvas id="myChart" width="400" height="200"></canvas>
+                 <br/>
+                 <br/>
+             </div>
+            <div class="beforePadding"></div>
 
         </div>
-        
+        <div class="desktopView1">
+                    <div class="beforePadding"></div>
+
              <h3>Scatter Plot of Schools</h3>
              <br/>
-    
-		<div id="googleMap" style="width:100%;height:400px;"></div>
+        
+		      <div id="googleMap" style="width:100%;height:400px;"></div>
+        </div>
 
 <script>
     function myMap() {
@@ -49,7 +62,7 @@
   {name: 'Call parents', data: {'2013-02-10 00:00:00 -0800': 5, '2013-02-17 00:00:00 -0800': 3}}
 ];
 
-      var ctx = document.getElementById("myChart").getContext('2d');
+    var ctx = document.getElementById("myChart").getContext('2d');
     var chart = new Chart (ctx, {
         
     // The type of chart we want to create
@@ -66,12 +79,13 @@
             data1: [0, 10, 5, 2, 20, 30, 45],
             fillOpacity: .3,
             fill: 'false',
+            
         },{
                   
             label: "IPT",
             backgroundColor: 'rgba(55, 99, 132, 0.3)',
             borderColor: 'rgb(55, 99, 132)',
-            data: [4, 13, 15, 2, 50, 30, 25],
+            data: [4, 13, 15, 2, 50, 30, 100],
             fillOpacity: .3,
             fill: 'false',
             hidden: 'true',

@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
  
-<body class="">
+<body>
 
 <nav class="navbar navbar-default navbar-fixed-top" data-spy="" data-offset-top="">
   <div class="container-fluid desktopView">
@@ -43,7 +43,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="menuFloat nav navbar-nav navbar-right">
-        <li><a href="{{ url_for('main') }}">Home </a></li>
+        <li ><a href="{{ url_for('main') }}">Home </a></li>
         <li><a href=" ">Random</a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
       </ul>
@@ -51,7 +51,7 @@
   </div><!-- /.container-fluid -->
 </nav>
     <br/>
-    <div class="desktopView">
+    <div class="">
         <div class=" wrapper">
 
 	   {% block content %} {% endblock %}
@@ -60,7 +60,16 @@
     <br/>
     
     <script>
+        /*$(document).ready(function () {
+    $('.nav li').click(function(e) {
 
+        $('.nav li.active').removeClass('active');
+
+        var $parent = $(this).parent();
+        $parent.addClass('active');
+        e.preventDefault();
+    });
+});*/
     </script>
 </body>
  <footer class="footer">

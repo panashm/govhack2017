@@ -2,11 +2,33 @@
     margin: 0;
 }
 
+.stemTable{
+    background-color: #EEEEEE;
+}
+
+#myChart {
+   background-color: #EEEEEE;
+}
+
 .subHeading1 {
     color: #546E7A;
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    border-bottom: 3px solid #546E7A; 
+    margin-bottom: -10px;
+
+    color: black;
+}
+
+.active{
+   border-bottom: 3px solid #546E7A; 
+    margin-bottom: -10px;
+       background-color: #EEEEEE;
+
 }
 
 .subHeading1:before{
@@ -28,7 +50,14 @@
 .desktopView {
     height: 100%;
     max-width: 700px;
+    margin: 0 auto !important;
+    float: none !important;
+}
 
+.desktopView1 {
+    height: 100%;
+    max-width: 700px;
+    padding: 15px;
     margin: 0 auto !important;
     float: none !important;
 }
@@ -60,7 +89,7 @@ body {
 
 .navbar {
     /*margin-bottom: 0px;*/
-    background-color: #EEEEEE;
+    background-color: #e6e6e6;
     /*position: fixed; /* Set the navbar to fixed position */
     /*top: 0; /* Position the navbar at the top of the page */
     /*width: 100%; /* Full width */
@@ -89,7 +118,7 @@ body {
 }
 
 .labelUsername {
-    margin-top:2px;
+    margin-top:3px;
     margin-bottom:2px;
     display: inline;
     font-size: 18px;
