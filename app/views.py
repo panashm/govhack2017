@@ -69,11 +69,13 @@ def main():
     return render_template('index.html', subjectDict = subjectDict)
 
 
-@app.route("/about", methods=['GET', 'POST'])
+@app.route("/about", methods=['GET'])
 def about():
     return render_template('about.html')
 
-    
+@app.route("/datasets", methods=['GET'])
+def dataset():
+    return render_template('dataset.html')
     
 if __name__ == "__main__":
     app.run()
