@@ -8,8 +8,8 @@
     <!--<tite>TEST BOOTSTRAP TEMPLATE</tite>-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="https://unpkg.com/vue@2.2.6/dist/vue.js"></script>
-    <script src="https://unpkg.com/chart.js@2.5.0/dist/Chart.bundle.js"></script>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://unpkg.com/chartkick@2.2.3"></script>
     <script src="{{ url_for('static', filename='js/dist/vue-chartkick.js') }}"></script>
@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
  
-<body class="">
+<body>
 
 <nav class="navbar navbar-default navbar-fixed-top" data-spy="" data-offset-top="">
   <div class="container-fluid desktopView">
@@ -43,7 +43,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="menuFloat nav navbar-nav navbar-right">
-        <li><a href="{{ url_for('main') }}">Home </a></li>
+        <li ><a href="{{ url_for('main') }}">Home </a></li>
         <li><a href=" ">Random</a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
       </ul>
@@ -51,7 +51,7 @@
   </div><!-- /.container-fluid -->
 </nav>
     <br/>
-    <div class="desktopView">
+    <div class="">
         <div class=" wrapper">
 
 	   {% block content %} {% endblock %}
@@ -60,22 +60,16 @@
     <br/>
     
     <script>
-      var app = new Vue({
-        el: "#app",
-        
-        data: {
-            
-            
-          data: [["Jan", 4], ["Feb", 2], ["Mar", 10], ["Apr", 5], ["May", 3], ["Jun", 8], ["Jul", 4]],
-          max: 10
-        },
-        mounted: function() {
-          setTimeout(() => {
-            this.data = this.data.concat([["Aug", 10]])
-            this.max = this.max += 5
-          }, 2000)
-        }
-      })
+        /*$(document).ready(function () {
+    $('.nav li').click(function(e) {
+
+        $('.nav li.active').removeClass('active');
+
+        var $parent = $(this).parent();
+        $parent.addClass('active');
+        e.preventDefault();
+    });
+});*/
     </script>
 </body>
  <footer class="footer">
